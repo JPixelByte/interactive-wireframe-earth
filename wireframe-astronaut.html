@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframe Interactive Earth</title>
+    <link rel="stylesheet" href="wireframe-earth.css" />
+    <link rel="icon" sizes="150x150" type="image/png" href="src/earth-icon.png" />
+
+     <script type="importmap">
+      {
+			"imports": {
+				"three": "https://cdn.jsdelivr.net/npm/three@0.170/build/three.module.js",
+          "jsm/": "https://cdn.jsdelivr.net/npm/three@0.170/examples/jsm/",
+          "dat.gui": "https://cdn.jsdelivr.net/npm/dat.gui@0.7.9/build/dat.gui.module.js"
+        }
+		}
+    </script>
+  </head>
+  <body>
+      <!-- Floating Astronaut -->
+
+    <img src="src/astronautbandw.png" class="astronaut_hovering_small" id="astronaut_hovering_small"
+    title="Astronaut Hovering" alt="Astronaut Hovering" />
+
+ <!-- <img src="src/astronautbandwdsma.png" class="astronaut_hovering_small" id="astronaut_hovering_small"
+    title="Astronaut Hovering" alt="Astronaut Hovering" /> -->
+
+
+    <div id="hudPanel">
+      <div class="hud-icon" id="globe-icon">🌐</div>
+      <div class="hud-content">
+        <div class="hud-title">Globe Control</div>
+        <div class="hud-status">Status: <span id="hudStatus">OFF</span></div>
+      </div>
+    </div>
+    <button id="autoRotateButton" type="button">AUTO-ROTATE OFF</button>
+    <button id="astronautToggleButton" type="button">ASTRONAUT OFF</button>
+    <script type="module" src="wireframe-astronaut.js"></script>
+
+    <!-- Credits: Robotic Bobby and Github Co-Pilot-->
+  </body>
+</html>
